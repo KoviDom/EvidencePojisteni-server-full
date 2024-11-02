@@ -6,7 +6,7 @@ import lombok.Setter;
 
 import java.time.LocalDate;
 
-@Entity
+@Entity(name = "pojisteni")
 @Getter
 @Setter
 public class PojisteniEntity {
