@@ -17,13 +17,13 @@ public interface PojistenyService {
      * odstraneni pojistenyho podle ID
      * @param id
      */
-    void odstranitPojisteny(long id);
+    void smazatPojisteny(long id);
 
     /**
      * seznam vsech pojistenych
      * @return List/seznam vsech pojistenych
      */
-    List<PojistenyDTO> ziskaniVsechPojistenych();
+    List<PojistenyDTO> seznamVsechPojistenych();
 
     /**
      * pojistenyho, ktery chceme zobrazit a jeho detaily
