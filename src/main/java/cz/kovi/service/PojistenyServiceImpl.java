@@ -69,7 +69,7 @@ public class PojistenyServiceImpl implements PojistenyService{
         return pojistenyMapper.toDTO(existujiciPojisteny);
     }
 
-    //Pomocná metoda pro vyhledání faktury v databázi a vyhození výjimky, pokud není nalezena.
+    //Pomocná metoda pro vyhledání pojistenyho v databázi a vyhození výjimky, pokud není nalezena.
     private PojistenyEntity fetchPojistenyPodleId(long id) {
         return pojistenyRepository.findById(id)
                 .orElseThrow(() -> new NotFoundException("Pojisteny s ID " + id + "nebyl nalezen v DB."));
