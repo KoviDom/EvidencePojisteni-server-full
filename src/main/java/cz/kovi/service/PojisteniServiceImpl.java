@@ -3,7 +3,6 @@ package cz.kovi.service;
 import cz.kovi.dto.PojisteniDTO;
 import cz.kovi.dto.mapper.PojisteniMapper;
 import cz.kovi.entity.PojisteniEntity;
-import cz.kovi.entity.PojistenyEntity;
 import cz.kovi.entity.repository.PojisteniRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 
