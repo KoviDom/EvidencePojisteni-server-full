@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  postgres:
+    image: postgres:latest  # Používá oficiální PostgreSQL Docker image
+    container_name: postgres_container  # Název kontejneru
+    ports:
+      - "5432:5432"  # Mapuje port 5432 z kontejneru na tvůj lokální port 5432
+    environment:
+      POSTGRES_USER: Kovidom      # Nastaví uživatelské jméno
+      POSTGRES_PASSWORD: surprise_secret  # Nastaví heslo
+      POSTGRES_DB: evidence_pojistenych_db  # Vytvoří databázi s tímto názvem
